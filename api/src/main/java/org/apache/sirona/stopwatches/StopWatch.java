@@ -22,11 +22,11 @@ package org.apache.sirona.stopwatches;
  * <p/>
  * StopWatch implementation is supposed not to be thread-safe and to be a one-shot tool. Don't
  * share it beetween threads, don't try to reuse it.
- *
+ *非线程安全的，一次使用的
  *
  */
 public interface StopWatch {
-    long getElapsedTime();
+    long getElapsedTime();//消逝/过去的时间
 
     StopWatch stop();
 }

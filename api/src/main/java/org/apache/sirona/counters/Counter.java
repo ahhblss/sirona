@@ -52,11 +52,11 @@ public interface Counter {
 
     double getSum();
 
-    double getStandardDeviation();
+    double getStandardDeviation();//绝对偏差
 
-    double getVariance();
+    double getVariance();//方差
 
-    double getMean();
+    double getMean();//平均数
 
     double getSecondMoment(); // here for aggregation etc but not (yet?) a human metric so not in MetricData
 

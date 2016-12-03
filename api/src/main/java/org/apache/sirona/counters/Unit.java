@@ -90,7 +90,7 @@ public class Unit implements Comparable<Unit>, Serializable {
     // "BILLION" does not have same signification depending on country (10^12 or 10^9).
     // We use International system of unit names to avoid confusion
     // @see http://en.wikipedia.org/wiki/SI
-    public static final Unit UNARY = new Unit("u");
+    public static final Unit UNARY = new Unit("u");//一元的
     public static final Unit DECA = new Unit("*10", UNARY, 10);
     public static final Unit HECTO = new Unit("*100", DECA, 10);
     public static final Unit KILO = new Unit("*1000", HECTO, 10);

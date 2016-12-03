@@ -121,13 +121,13 @@ public abstract class AbstractPerformanceInterceptor<T> implements Serializable 
             // and all agent classes not really loaded
             return newContext( invocation, context, new StopWatch()
             {
-                @Override
+
                 public long getElapsedTime()
                 {
                     return 0;
                 }
 
-                @Override
+
                 public StopWatch stop()
                 {
                     return this;

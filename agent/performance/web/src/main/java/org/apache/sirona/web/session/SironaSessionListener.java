@@ -60,7 +60,7 @@ public class SironaSessionListener implements HttpSessionListener, ServletContex
         if (contextPath == null || contextPath.isEmpty()) {
             contextPath = "/";
         }
-        counter = Repository.INSTANCE.getCounter(new Counter.Key(new Role("session-durations", Unit.Time.NANOSECOND), "session-durations-" + contextPath));
+        counter = Repository.INSTANCE.getCounter(new Counter.Key(new Role("session-durations"/*持续时间*/, Unit.Time.NANOSECOND), "session-durations-" + contextPath));
 
         gauge = new SessionGauge(contextPath, sessionNumber);
         Repository.INSTANCE.addGauge(gauge);

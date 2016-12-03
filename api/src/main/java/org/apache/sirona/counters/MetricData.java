@@ -19,7 +19,7 @@ package org.apache.sirona.counters;
 
 /**
  * An enum to acces data from a Counter based on the property name. Can be used to avoid reflection on Counter
- * implementation when requesting data and undesirable exposure of internals.
+ * implementation when requesting data and undesirable(不方便的) exposure(曝露) of internals(内部构件).
  * <p/>
  * example :
  * <p/>
